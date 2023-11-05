@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "afZkDIY/grdbqoZQ8h7Z6jR9WSVaSXf8TH+5Bq5hDug=",
+  "Hash": "T7q7uhc/X/UPreRGQFyEPemAyh2OoSe20FtTv0YeH/A=",
   "Source": "Post-Management",
   "BasePath": "_content/Post-Management",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Post-Management\\wwwroot",
+      "Source": "Post-Management",
+      "ContentRoot": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\",
+      "BasePath": "_content/Post-Management",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\168cb6e1-58bd-4323-9ed2-5459349ddb13.jpeg",
+      "SourceId": "Post-Management",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\",
+      "BasePath": "_content/Post-Management",
+      "RelativePath": "Uploads/168cb6e1-58bd-4323-9ed2-5459349ddb13.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\168cb6e1-58bd-4323-9ed2-5459349ddb13.jpeg"
+    },
+    {
+      "Identity": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\2fee7718-5088-44ba-a71b-81d04a267c04.jpg",
+      "SourceId": "Post-Management",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\",
+      "BasePath": "_content/Post-Management",
+      "RelativePath": "Uploads/2fee7718-5088-44ba-a71b-81d04a267c04.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\2fee7718-5088-44ba-a71b-81d04a267c04.jpg"
+    },
+    {
+      "Identity": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\cbace341-259e-4ab4-bbf8-b7143ca1437a.jpeg",
+      "SourceId": "Post-Management",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\",
+      "BasePath": "_content/Post-Management",
+      "RelativePath": "Uploads/cbace341-259e-4ab4-bbf8-b7143ca1437a.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\cbace341-259e-4ab4-bbf8-b7143ca1437a.jpeg"
+    },
+    {
+      "Identity": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\db2ceb0d-e4f2-45ad-ade7-80f6b733f403.jpg",
+      "SourceId": "Post-Management",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\",
+      "BasePath": "_content/Post-Management",
+      "RelativePath": "Uploads/db2ceb0d-e4f2-45ad-ade7-80f6b733f403.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\db2ceb0d-e4f2-45ad-ade7-80f6b733f403.jpg"
+    }
+  ]
 }

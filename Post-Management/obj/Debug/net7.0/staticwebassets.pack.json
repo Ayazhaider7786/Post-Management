@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\168cb6e1-58bd-4323-9ed2-5459349ddb13.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\168cb6e1-58bd-4323-9ed2-5459349ddb13.jpeg"
+    },
+    {
+      "Id": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\2fee7718-5088-44ba-a71b-81d04a267c04.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\2fee7718-5088-44ba-a71b-81d04a267c04.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\cbace341-259e-4ab4-bbf8-b7143ca1437a.jpeg",
+      "PackagePath": "staticwebassets\\Uploads\\cbace341-259e-4ab4-bbf8-b7143ca1437a.jpeg"
+    },
+    {
+      "Id": "E:\\Dotnet Applications\\webApi\\bit friend\\Post-Management\\Post-Management\\wwwroot\\Uploads\\db2ceb0d-e4f2-45ad-ade7-80f6b733f403.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\db2ceb0d-e4f2-45ad-ade7-80f6b733f403.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Post-Management.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Post-Management.props",
+      "PackagePath": "build\\Post-Management.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Post-Management.props",
+      "PackagePath": "buildMultiTargeting\\Post-Management.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Post-Management.props",
+      "PackagePath": "buildTransitive\\Post-Management.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -9,5 +9,7 @@ namespace Post_Management.Data
         {
         }
         public DbSet<BlogPost> myBlogPost { get; set; }
+        public DbSet<Comment> myComment { get; set; }
+
     }
 }

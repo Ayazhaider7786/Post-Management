@@ -1,20 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Post_Management.Models;
-using Post_Management.Models.Domain;
 using Post_Management.Repository;
-using System;
 
 namespace Post_Management.Controllers
 {
-    [Route("api/posts")]
+    [Route("api/comments")]
     [ApiController]
-    public class PostsController : ControllerBase
+    public class CommentsController : Controller
     {
-        private readonly PostRepository _postRepository;
-
-        public PostsController(PostRepository postRepository)
+        private readonly CommentManagementService _commentManagementService; 
+        public CommentsController(CommentManagementService commentManagementService)
         {
-            _postRepository = postRepository;
+            _commentManagementService = commentManagementService;
         }
 
         [HttpGet]
@@ -22,7 +19,7 @@ namespace Post_Management.Controllers
         {
             try
             {
-                var posts = _postRepository.GetAll();
+                var posts = _commentManagementService.GetAllComments();
                 return Ok(posts);
             }
             catch (Exception ex)
@@ -37,7 +34,7 @@ namespace Post_Management.Controllers
         {
             try
             {
-                var post = _postRepository.GetById(id);
+                var post = _commentManagementService.GetCommentsById(id);
                 if (post == null)
                     return NotFound();
                 return Ok(post);
@@ -48,33 +45,13 @@ namespace Post_Management.Controllers
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
-
         [HttpPost]
-        [Consumes("multipart/form-data")]
-        public IActionResult Create([FromForm] BlogPostModel post)
+        public IActionResult Create( CommentModel comment)
         {
             try
             {
-                var createdPost = _postRepository.Create(post);
+                var createdPost = _commentManagementService.CreateComment(comment);
                 return CreatedAtAction("GetById", new { id = createdPost.Id }, createdPost);
-            }
-            catch (Exception ex)
-            {
-                // Log the exception if needed
-                return StatusCode(500, "An error occurred while processing your request.");
-            }
-        }
-
-        [HttpPut("{id}")]
-        [Consumes("multipart/form-data")]
-        public IActionResult Update(Guid id, [FromForm] BlogPostModel post)
-        {
-            try
-            {
-
-                if (!_postRepository.Update(id, post))
-                    return NotFound();
-                return NoContent();
             }
             catch (Exception ex)
             {
@@ -88,7 +65,7 @@ namespace Post_Management.Controllers
         {
             try
             {
-                if (!_postRepository.Delete(id))
+                if (!_commentManagementService.DeleteComment(id))
                     return NotFound();
                 return NoContent();
             }
@@ -98,6 +75,23 @@ namespace Post_Management.Controllers
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(Guid id, CommentModel post)
+        {
+            try
+            {
+                if (!_commentManagementService.Update(id, post))
+                    return NotFound();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // Log the exception if needed
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
+        }
+
 
     }
 }

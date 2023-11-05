@@ -1,3 +1,4 @@
+using AspnetIdentityRoleBasedTutorial.Services;
 using Microsoft.EntityFrameworkCore;
 using Post_Management.Data;
 using Post_Management.Repository;
@@ -16,6 +17,8 @@ builder.Services.AddDbContext<PostManagementDbContext>(
     );
 
 builder.Services.AddScoped<PostRepository>();
+builder.Services.AddScoped<IFileService, FileService>();
+builder.Services.AddScoped<CommentManagementService>();
 
 var app = builder.Build();
 
